@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Keyboard
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:keyHeight="@dimen/ime_sub_keyboard_height"
+        android:keyWidth="100%">
+
+    <Row>
+        <Key android:codes="@integer/ime_keycode_show_ime_picker"
+            android:keyWidth="60sp"
+             android:keyIcon="@drawable/ime_key_keyboard" android:keyEdgeFlags="left" />
+        <!--<Key android:codes="67" android:keyIcon="@drawable/ime_key_delete" android:isRepeatable="true" />-->
+        <Key android:codes="@integer/ime_keycode_show_search_window"
+            android:keyWidth="60sp"
+             android:keyIcon="@android:drawable/ic_menu_search" android:keyEdgeFlags="right" />
+    </Row>
+
+</Keyboard>

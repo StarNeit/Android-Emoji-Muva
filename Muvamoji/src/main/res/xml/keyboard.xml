@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+           android:keyWidth="@dimen/ime_key_size"
+           android:keyHeight="@dimen/ime_key_size">
+    <Row>
+        <Key android:keyLabel="dummy"/>
+    </Row>
+</Keyboard>

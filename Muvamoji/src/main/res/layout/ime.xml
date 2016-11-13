@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ime_sub_keyboard_height"
+        style="@style/IMESubKeyboardViewStyle">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size ON"
+            android:id="@+id/ime_size_on_off"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:text="SHARE"
+            android:id="@+id/ime_key_share" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white" />
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/keyboard_viewFlipper"
+        android:layout_weight="1">
+    </ViewFlipper>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/keyboard_bottom">
+
+        <ImageButton
+            android:layout_width="@dimen/ime_category_width"
+            android:layout_height="match_parent"
+            android:src="@drawable/sym_keyboard_language_switch"
+            android:id="@+id/keyboard_language_switch"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_toLeftOf="@+id/ime_category_scrollview" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ime_category_height"
+            android:layout_weight="1"
+            android:id="@+id/ime_category_scrollview"
+            android:layout_toRightOf="@+id/keyboard_language_switch"
+            android:layout_toLeftOf="@+id/keyboard_delete"
+            style="@style/IMEHorizontalScrollViewStyle">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/ime_categories"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:background="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ime_category_button_history"
+                    android:onClick="onClickCategoryButton"
+                    android:src="@drawable/moji_recent"
+                    android:contentDescription="@string/ime_category_id_history" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_toLeftOf="@+id/keyboard_delete" />
+
+        <ImageButton
+            android:layout_width="@dimen/ime_category_width"
+            android:layout_height="match_parent"
+            android:src="@drawable/sym_keyboard_delete"
+            android:id="@+id/keyboard_delete"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

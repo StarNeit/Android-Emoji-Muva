@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@color/dialog_background"
+    android:alpha="1.0">
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:id="@+id/close"
+        android:background="@drawable/button_close"
+        android:layout_gravity="start"
+        android:scaleType="fitCenter" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/gridView"
+        android:numColumns="auto_fit"
+        android:background="@drawable/skintone"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:alpha="1.0"
+        android:layout_below="@+id/gridView">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginBottom="30dp"
+            android:scaleType="center"
+            android:id="@+id/showImageView"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible" />
+
+        <SeekBar
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/seekBar"
+            android:max="50"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEND"
+            android:textColor="#ffffff"
+            android:id="@+id/send_button"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/roundedbutton" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <!-- IME HorizontalScrollView -->
+    <style name="AppTheme.HorizontalScrollView" parent="android:Widget.Holo.HorizontalScrollView">
+        <item name="android:background">@color/white_alpha</item>
+    </style>
+
+    <!-- IME Theme. -->
+    <attr name="keyboardViewStyle" format="reference" />
+    <attr name="subKeyboardViewStyle" format="reference" />
+    <attr name="horizontalScrollViewStyle" format="reference" />
+    <style name="IMETheme" parent="android:Theme.Holo.InputMethod">
+        <item name="android:buttonStyle">@style/IMEButtonStyle</item>
+        <item name="android:radioButtonStyle">@style/IMERadioButtonStyle</item>
+        <item name="android:imageButtonStyle">@style/IMEImageButtonStyle</item>
+        <item name="android:scrollViewStyle">@style/IMEScrollViewStyle</item>
+        <item name="horizontalScrollViewStyle">@style/IMEHorizontalScrollViewStyle</item>
+        <item name="keyboardViewStyle">@style/IMEKeyboardViewStyle</item>
+        <item name="subKeyboardViewStyle">@style/IMESubKeyboardViewStyle</item>
+    </style>
+
+    <!-- IME Button -->
+    <style name="IMEButtonStyle" parent="android:style/Widget.Holo.Button">
+        <item name="android:textSize">@dimen/ime_text_size</item>
+    </style>
+
+    <!-- IME RadioButton -->
+    <style name="IMERadioButtonStyle" parent="android:style/Widget.Holo.CompoundButton.RadioButton">
+        <item name="android:textSize">@dimen/ime_text_size</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/ime_category_button_background</item>
+    </style>
+
+    <!-- IME ImageButton -->
+    <style name="IMEImageButtonStyle" parent="android:Widget.Holo.ImageButton">
+        <item name="android:background">@color/imeKeyboardPrimary</item>
+        <item name="android:keyBackground">@drawable/ime_keyboard_key_background</item>
+    </style>
+
+    <!-- IME ScrollView -->
+    <style name="IMEScrollViewStyle" parent="android:Widget.Holo.ScrollView">
+    </style>
+
+    <!-- IME HorizontalScrollView -->
+    <style name="IMEHorizontalScrollViewStyle" parent="android:Widget.Holo.HorizontalScrollView">
+        <item name="android:background">@color/imeKeyboardPrimary</item>
+    </style>
+
+    <!-- IME KeyboardView -->
+    <style name="IMEKeyboardViewStyle" parent="android:style/Widget.KeyboardView">
+        <item name="android:background">@color/imeKeyboardPrimary</item>
+        <item name="android:keyBackground">@drawable/ime_keyboard_key_background</item>
+    </style>
+
+    <!-- IME Sub KeyboardView -->
+    <style name="IMESubKeyboardViewStyle" parent="android:style/Widget.KeyboardView">
+        <item name="android:background">@color/imeKeyboardPrimary</item>
+        <item name="android:keyBackground">@drawable/ime_subkeyboard_key_background</item>
+    </style>
+
+</resources>

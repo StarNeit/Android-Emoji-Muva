@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/PLEASE/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="/Volumes/Work/moji-droid-app/muva-moji/Muvamoji/build/intermediates/pre-dexed/release/support-annotations-23.2.1_a630f883719d355be43cb270f3ac87dda7dc846c.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/moji-droid-app/muva-moji/Muvamoji/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="/Volumes/Work/moji-droid-app/muva-moji/Muvamoji/build/intermediates/pre-dexed/release/com.android.support-appcompat-v7-23.2.1_af8d5921b5d3b7e51ccf72744d17988c8506c6b0.jar" />
+    </item>
+    <item
+        jar="/Users/PLEASE/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Volumes/Work/moji-droid-app/muva-moji/Muvamoji/build/intermediates/pre-dexed/release/glide-3.7.0_be8459232573305468d2434b47b1f9899d1909f2.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/moji-droid-app/muva-moji/Muvamoji/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="/Volumes/Work/moji-droid-app/muva-moji/Muvamoji/build/intermediates/pre-dexed/release/com.android.support-support-v4-23.2.1_2ca8126d4a69b0464df9b3a57a3bb1beab4127dd.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/moji-droid-app/muva-moji/Muvamoji/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/libs/internal_impl-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="/Volumes/Work/moji-droid-app/muva-moji/Muvamoji/build/intermediates/pre-dexed/release/internal_impl-23.2.1_6c02c9a14ecf27f2969255048b8df79aff257352.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/moji-droid-app/muva-moji/Muvamoji/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="/Volumes/Work/moji-droid-app/muva-moji/Muvamoji/build/intermediates/pre-dexed/release/com.android.support-support-vector-drawable-23.2.1_c67148bd5d443bb8f0a7811744870cceaa667fe2.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/moji-droid-app/muva-moji/Muvamoji/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="/Volumes/Work/moji-droid-app/muva-moji/Muvamoji/build/intermediates/pre-dexed/release/com.android.support-animated-vector-drawable-23.2.1_66f41fb4e3533a3466175e700ff89cd275c67f81.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/moji-droid-app/muva-moji/Muvamoji/build/intermediates/exploded-aar/muva-moji/MuvamojiLibrary/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="329b7cfb683be56e3381b98b6206f29db8832b46">
+        <dex dex="/Volumes/Work/moji-droid-app/muva-moji/Muvamoji/build/intermediates/pre-dexed/release/muva-moji-MuvamojiLibrary-unspecified_9d5af402f9795e8947a715e9d2f330a93dca9d6a.jar" />
+    </item>
+    <item
+        jar="/Users/PLEASE/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.2.3/3ae380888029daefb91d3ecdca3a37d8cb92bc9/jackson-databind-2.2.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="03ae380888029daefb91d3ecdca3a37d8cb92bc9">
+        <dex dex="/Volumes/Work/moji-droid-app/muva-moji/Muvamoji/build/intermediates/pre-dexed/release/jackson-databind-2.2.3_ef3e1c0f5ead3dfb56e5f045dc5fa4e5127f7022.jar" />
+    </item>
+    <item
+        jar="/Users/PLEASE/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.3/1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14/jackson-core-2.2.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14">
+        <dex dex="/Volumes/Work/moji-droid-app/muva-moji/Muvamoji/build/intermediates/pre-dexed/release/jackson-core-2.2.3_003b737482902743ccc597891ffc8572adc3457f.jar" />
+    </item>
+    <item
+        jar="/Users/PLEASE/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.2.3/527fece4f23a457070a36c371a26d6c0208e1c3/jackson-annotations-2.2.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0527fece4f23a457070a36c371a26d6c0208e1c3">
+        <dex dex="/Volumes/Work/moji-droid-app/muva-moji/Muvamoji/build/intermediates/pre-dexed/release/jackson-annotations-2.2.3_13678279be814d8f1f6c5774614a7120facd7da0.jar" />
+    </item>
+
+</items>

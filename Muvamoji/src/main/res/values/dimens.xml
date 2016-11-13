@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="category_button_padding">1px</dimen>
+
+    <!-- IME layout size. -->
+    <dimen name="ime_text_size">14sp</dimen>
+    <dimen name="ime_key_size">48dp</dimen>
+    <dimen name="ime_key_icon_size">36dp</dimen>
+    <dimen name="ime_search_emoji_button_size">@dimen/ime_key_size</dimen>
+    <dimen name="ime_search_emoji_button_icon_size">@dimen/ime_key_icon_size</dimen>
+    <dimen name="ime_category_width">40dp</dimen>
+    <dimen name="ime_category_height">40dp</dimen>
+    <dimen name="ime_sub_keyboard_height">40dp</dimen>
+
+    <!-- Search dialog layout size. -->
+    <dimen name="search_dialog_edittext_width">200dp</dimen>
+
+    <!-- Catalog layout size. -->
+    <dimen name="catalog_tab_icon_size">50dp</dimen>
+    <dimen name="catalog_icon_size">64dp</dimen>
+
+    <!-- IME Popup layout sizes. -->
+    <dimen name="ime_popup_image_size">150dp</dimen>
+</resources>

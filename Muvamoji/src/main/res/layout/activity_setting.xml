@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:divider="@color/horizontal_divider">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- This is a centered title -->
+            <TextView
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/action_settings"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+                android:id="@+id/toolbar_title" />
+
+            <!-- This is a custom left side button -->
+
+            <Button
+                android:id="@+id/btn_setting_close"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginRight="?attr/actionBarSize"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                android:layout_gravity="start|center_vertical"
+                android:text="@string/close"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:textColor="#ffffff" />
+
+        </FrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3f3f3"
+            android:divider="?android:listDivider"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:showDividers="middle">
+
+            <!-- Rate -->
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_rate"
+                android:layout_width="fill_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:padding="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/rate_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="6dip"
+                    android:padding="6dp"
+                    android:src="@drawable/btn_rate"/>
+
+                <TextView
+                    android:id="@+id/setting_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_toRightOf="@id/rate_icon"
+                    android:padding="10dp"
+                    android:text="Rate"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow"
+                    android:padding="6dp"
+                    android:contentDescription="" />
+
+            </RelativeLayout>
+
+            <!-- Contact us -->
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_contact"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:padding="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/contact_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="6dip"
+                    android:padding="6dp"
+                    android:src="@drawable/btn_contact"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_toRightOf="@id/contact_icon"
+                    android:padding="10dp"
+                    android:text="Contact Us"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow"
+                    android:padding="6dp" />
+
+            </RelativeLayout>
+
+            <!-- Follow us -->
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_follow"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:padding="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#ffffff"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/follow_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="6dip"
+                    android:padding="6dp"
+                    android:src="@drawable/btn_instagram"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_toRightOf="@id/follow_icon"
+                    android:padding="10dp"
+                    android:text="Follow Us"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow"
+                    android:padding="6dp" />
+
+            </RelativeLayout>
+
+            <!-- Like us -->
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_like"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:padding="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/like_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="6dip"
+                    android:padding="6dp"
+                    android:src="@drawable/btn_facebook"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_toRightOf="@id/like_icon"
+                    android:padding="10dp"
+                    android:text="Like Us"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow"
+                    android:padding="6dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_tweet"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:padding="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="6dip"
+                    android:padding="6dp"
+                    android:src="@drawable/btn_twitter" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:padding="10dp"
+                    android:text="Tweet Us"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow"
+                    android:padding="6dp" />
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_snap"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:padding="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="6dip"
+                    android:padding="6dp"
+                    android:src="@drawable/btn_snapchat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:padding="10dp"
+                    android:text="Snap Us"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow"
+                    android:padding="6dp" />
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_terms"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:padding="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#ffffff"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="6dip"
+                    android:padding="6dp"
+                    android:src="@drawable/btn_terms" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:padding="10dp"
+                    android:text="Terms of Service"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow"
+                    android:padding="6dp" />
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_privacy"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:padding="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="6dip"
+                    android:padding="6dp"
+                    android:src="@drawable/btn_terms" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_toRightOf="@+id/imageView4"
+                    android:padding="10dp"
+                    android:text="Privacy Policy"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow"
+                    android:padding="6dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

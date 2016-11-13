@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- This is a centered title -->
+            <TextView
+                android:orientation="horizontal"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+                android:id="@+id/toolbar_title"
+                android:background="@drawable/logo" />
+
+            <!-- This is a custom left side button -->
+
+            <ImageButton
+                android:id="@+id/btn_about"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginRight="?attr/actionBarSize"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                android:layout_gravity="start|center_vertical"
+                android:src="@drawable/globe_about"
+                style="@style/Widget.AppCompat.ActionButton" />
+
+            <!-- This is a custom right side button -->
+
+            <ImageButton
+                android:id="@+id/btn_setting"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                android:layout_gravity="end"
+                android:src="@drawable/globe_setting"
+                style="@style/Widget.AppCompat.ActionButton" />
+
+
+        </FrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/catalog_category_scrollview"
+        android:scrollbars="none"
+        style="@style/AppTheme.HorizontalScrollView">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/catalog_categories"
+            android:orientation="horizontal" android:scrollbars="none">
+
+            <ImageButton
+                android:background="@null"
+                android:layout_width="@dimen/catalog_tab_icon_size"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:id="@+id/catalog_category_button_recent"
+                android:onClick="onClickCategoryButton"
+                android:contentDescription="@string/ime_category_id_history"
+                android:src="@drawable/moji_recent"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/horizontal_divider"
+        android:id="@+id/view" />
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="@dimen/catalog_icon_size"
+        android:minHeight="@dimen/catalog_icon_size"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"/>
+
+</LinearLayout>
